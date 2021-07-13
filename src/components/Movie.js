@@ -28,21 +28,23 @@ const Movie = () => {
         revenue={movie.revenue}
       />
       <Grid header="Actors">
-        {movie.actors.map((actor) => {
-          const { id, original_name, character, profile_path } = actor;
-          return (
-            <Actor
-              key={id}
-              name={original_name}
-              character={character}
-              imageUrl={
-                profile_path
-                  ? `${IMAGE_BASE_URL}${POSTER_SIZE}${profile_path}`
-                  : NoImage
-              }
-            />
-          );
-        }).slice(0, 30)}
+        {movie.actors
+          .map((actor) => {
+            const { id, original_name, character, profile_path } = actor;
+            return (
+              <Actor
+                key={id}
+                name={original_name}
+                character={character}
+                imageUrl={
+                  profile_path
+                    ? `${IMAGE_BASE_URL}${POSTER_SIZE}${profile_path}`
+                    : NoImage
+                }
+              />
+            );
+          })
+          .slice(0, 20)}
       </Grid>
     </div>
   );
