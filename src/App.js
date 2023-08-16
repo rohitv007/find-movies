@@ -14,7 +14,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <h3 style={{ textTransform: "uppercase", textAlign: "center" }}>
-            add dark mode in header
+            ! add dark mode !
           </h3>
           <Home />
         </Route>
