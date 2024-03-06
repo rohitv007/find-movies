@@ -13,9 +13,6 @@ function App() {
       <GlobalStyle />
       <Switch>
         <Route exact path="/">
-          <h3 style={{ textTransform: "uppercase", textAlign: "center" }}>
-            ! add dark mode !
-          </h3>
           <Home />
         </Route>
         <Route path="/movie/:movieId">
