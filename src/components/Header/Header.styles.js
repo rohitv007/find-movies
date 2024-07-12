@@ -15,15 +15,8 @@ export const Content = styled.div`
 `;
 
 export const LogoImg = styled.img`
-  width: 200px;
+  width: 300px;
   @media screen and (max-width: 500px) {
-    width: 150px;
-  }
-`;
-
-export const TMDBLogoImg = styled.img`
-  width: 100px;
-  @media screen and (max-width: 500px) {
-    width: 80px;
+    width: 200px;
   }
 `;
